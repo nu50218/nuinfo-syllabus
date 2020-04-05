@@ -4,6 +4,8 @@ WORKDIR /workdir
 
 COPY . .
 
+RUN apk add --no-cache ca-certificates
+
 RUN GOOS=linux CGO_ENABLED=0 go build -o app main.go
 
 FROM alpine:3.11
