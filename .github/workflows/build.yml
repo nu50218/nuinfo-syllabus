@@ -1,11 +1,8 @@
-name: Publish Docker image
-on:
-  push:
-    branches:
-      - master
+name: Build Docker image
+on: push
 jobs:
   build:
-    name: build and publish
+    name: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
@@ -16,13 +13,8 @@ jobs:
         with:
           version: latest
 
-      - name: Login DockerHub
-        run: |
-          echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
-
-      - name: Build and Publish
+      - name: Build
         run: |
           docker buildx build \
-            --push \
             --platform linux/arm/v7,linux/amd64 \
             -t ${{ github.repository }}:latest .
