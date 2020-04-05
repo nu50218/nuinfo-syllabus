@@ -4,7 +4,9 @@
 
 ## 使い方
 
-`$ docker run nu50218/nuinfo-syllabus`
+`$ docker run -p 8080"8080 nu50218/nuinfo-syllabus`
+
+`http://localhost:8080/subjects`で確認できます。
 
 | 環境変数     | 意味                    | デフォルト                                |
 | -- | -- | -- |
