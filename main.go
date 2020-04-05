@@ -4,7 +4,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/caarlos0/env"
+	"github.com/caarlos0/env/v6"
 	"github.com/nu50218/nuinfo-syllabus/server"
 )
 
