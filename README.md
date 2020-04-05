@@ -1,5 +1,8 @@
 # nuinfo-syllabus
 
+![publish](https://github.com/nu50218/nuinfo-syllabus/workflows/Publish%20Docker%20image/badge.svg)
+![build](https://github.com/nu50218/nuinfo-syllabus/workflows/Build%20Docker%20image/badge.svg)
+
 名大情報のシラバスのAPIサーバーのDockerイメージ(キャッシュしてくれるよ)
 
 ## 使い方
