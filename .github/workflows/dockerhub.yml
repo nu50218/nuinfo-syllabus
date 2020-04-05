@@ -4,7 +4,6 @@ on:
     branches:
       - master
 jobs:
-
   build:
     name: build and publish
     runs-on: ubuntu-latest
@@ -25,6 +24,5 @@ jobs:
         run: |
           docker buildx build \
             --push \
-            --platform linux/amd64,linux/arm64,linux/ppc64le,linux/s390x,linux/386,linux/arm/v7,linux/arm/v6 \
+            --platform linux/arm/v7,linux/amd64 \
             -t ${{ github.repository }}:latest .
-            
