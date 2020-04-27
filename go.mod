@@ -3,7 +3,7 @@ module github.com/nu50218/nuinfo-syllabus
 go 1.14
 
 require (
-	github.com/caarlos0/env/v6 v6.2.1
+	github.com/caarlos0/env/v6 v6.2.2
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/go-chi/chi v4.1.1-0.20200404220357-a9fe6cac9e2a+incompatible
 	github.com/nu50218/go-cacher v0.0.0-20200307085411-c96a351f4c90
