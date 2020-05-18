@@ -13,7 +13,7 @@
 
 | 環境変数     | 意味                    | デフォルト                                |
 | -- | -- | -- |
-| ENDPOINT | クロールするエンドポイント         | https://syllabus.i.nagoya-u.ac.jp/i/ |
+| ENDPOINT | クロールするエンドポイント（命名を間違えた気がします）         | https://syllabus.i.nagoya-u.ac.jp/i/ |
 | EXPIRES  | キャッシュを保持する時間          | 1h                                   |
 | INTERVAL | クロールするときにリクエストごとに待つ時間 | 500ms                                     |
 
